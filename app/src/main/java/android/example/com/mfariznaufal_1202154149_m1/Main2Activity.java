@@ -18,27 +18,35 @@ public class Main2Activity extends AppCompatActivity {
         Abnormal = (Button)findViewById(R.id.abnormal);
         Eatbus = (Button)findViewById(R.id.eatbus);
         makanan = (EditText)findViewById(R.id.makanan);
+        porsi = (EditText)findViewById(R.id.qty) ;
 
         Abnormal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent pindah = new Intent(Main2Activity.this, MainActivity.class);
-                String tempat = Abnormal.getText().toString();
-                pindah.putExtra("makanan", makanan.getText().toString());
-                pindah.putExtra("tempat", tempat);
-                pindah.putExtra("porsi", porsi.getText().toString());
-                startActivity(pindah);
+
+
+                    Intent pindah = new Intent(Main2Activity.this, MainActivity.class);
+                    String tempat = Abnormal.getText().toString();
+                    pindah.putExtra("makanan", makanan.getText().toString());
+                    pindah.putExtra("tempat", tempat);
+                    pindah.putExtra("porsi", porsi.getText().toString());
+                    startActivity(pindah);
+
             }
         });
         Eatbus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent pindah = new Intent(Main2Activity.this, MainActivity.class);
-                String tempat =Eatbus.getText().toString();
-                pindah.putExtra("makanan", makanan.getText().toString());
-                pindah.putExtra("tempat", tempat);
-                pindah.putExtra("porsi", porsi.getText().toString());
-                startActivity(pindah);
+
+
+                    Intent pindah = new Intent(Main2Activity.this, MainActivity.class);
+                    String tempat = Eatbus.getText().toString();
+                    pindah.putExtra("makanan", makanan.getText().toString());
+                    pindah.putExtra("tempat", tempat);
+                    pindah.putExtra("porsi", porsi.getText().toString());
+                    startActivity(pindah);
+
+
             }
         });
     }

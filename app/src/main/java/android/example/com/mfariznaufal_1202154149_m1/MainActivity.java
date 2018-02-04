@@ -34,10 +34,10 @@ public class MainActivity extends AppCompatActivity {
         lokasi.setText(Lokasi);
 
         switch (Lokasi){
-            case "Eatbus":
+            case "EATBUS":
                 biaya = 50000;
                 break;
-            case "Abnormal":
+            case "ABNORMAL":
                 biaya = 30000;
                 break;
         }
